@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+        <title>JSON Anzeige</title>
+        </head>
+        <body>
+
+        <h1>Aktuelle Daten</h1>
+
+        <pre id="json"></pre>
+
+        <script>
+        fetch("output.json")
+        .then(r => r.json())
+        .then(data => {
+            document.getElementById("json").textContent =
+                    JSON.stringify(data, null, 2);
+                    });
+                    </script>
+
+                    </body>
+                    </html>
