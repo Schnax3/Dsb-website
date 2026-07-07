@@ -346,7 +346,7 @@ def main():
     print(json.dumps(output, ensure_ascii=False))
 
     # SAVE FILE
-    output_path = "/config/dsb_output.json"
+    output_path = "output.json"
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False)
 
